@@ -5,29 +5,47 @@ body {
     padding: 0;
 }
 
-/* Tabs styles */
+/* Tabs container */
 .tabs {
     display: flex;
     background-color: #333;
     overflow: hidden;
 }
 
+/* Default tab styles */
 .tab {
     padding: 14px 20px;
     text-align: center;
     color: white;
     text-decoration: none;
     flex: 1;
-    background-color: #333;
     border: 1px solid #555;
 }
 
+/* Specific tab styles */
+.tab#home {
+    background-color: #333; /* Default color for Home tab */
+}
+
+.tab#sql {
+    background-color: #90EE90; /* Light green */
+    color: black; /* Black font color */
+}
+
+.tab#powerbi {
+    background-color: #FFFF00; /* Yellow */
+    color: black; /* Black font color */
+}
+
+/* Hover effect */
 .tab:hover {
     background-color: #575757;
 }
 
+/* Active tab styles */
 .tab.active {
     background-color: #111;
+    color: white;
 }
 
 /* Content sections */
@@ -36,6 +54,6 @@ body {
     display: none;
 }
 
-#home {
-    display: block; /* Show home content by default */
+.content-section.active {
+    display: block;
 }
