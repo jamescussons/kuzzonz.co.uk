@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const tabs = document.querySelectorAll('.tab');
     const sections = document.querySelectorAll('.content-section');
 
-    // Function to handle tab clicks
     function handleTabClick(event) {
         event.preventDefault();
 
