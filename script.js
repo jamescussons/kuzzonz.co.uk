@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('.content-section');
 
     function handleTabClick(event) {
-        event.preventDefault();
+        event.preventDefault(); // Prevent default anchor behavior
 
         // Remove 'active' class from all tabs and content sections
         tabs.forEach(tab => tab.classList.remove('active'));
