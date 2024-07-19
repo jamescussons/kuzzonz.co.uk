@@ -1,19 +1,30 @@
-// script.js
 document.addEventListener('DOMContentLoaded', () => {
     const tabs = document.querySelectorAll('.tab');
     const sections = document.querySelectorAll('.content-section');
 
-    tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            // Remove active class from all tabs
-            tabs.forEach(t => t.classList.remove('active'));
-            // Hide all sections
-            sections.forEach(section => section.style.display = 'none');
+    // Function to handle tab clicks
+    function handleTabClick(event) {
+        event.preventDefault();
 
-            // Add active class to clicked tab
-            tab.classList.add('active');
-            // Show the associated section
-            document.querySelector(tab.getAttribute('href')).style.display = 'block';
-        });
+        // Remove 'active' class from all tabs and content sections
+        tabs.forEach(tab => tab.classList.remove('active'));
+        sections.forEach(section => section.classList.remove('active'));
+
+        // Add 'active' class to the clicked tab
+        this.classList.add('active');
+
+        // Show the corresponding content section
+        const targetId = this.getAttribute('href').substring(1); // Remove the '#' from href
+        document.getElementById(targetId).classList.add('active');
+    }
+
+    // Add click event listeners to all tabs
+    tabs.forEach(tab => {
+        tab.addEventListener('click', handleTabClick);
     });
+
+    // Optional: Activate the first tab by default
+    if (tabs.length > 0) {
+        tabs[0].click();
+    }
 });
