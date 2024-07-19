@@ -3,17 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Kuzzonz Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to James' Portfolio</h1>
-    </header>
-    <main>
-        <h2>About Me</h2>
-        <p>This is the homepage of my portfolio website.</p>
-    </main>
+    <!-- Tabs Container -->
+    <div class="tabs">
+        <a href="#home" class="tab">Home</a>
+        <a href="#sql" class="tab">SQL</a>
+        <a href="#powerbi" class="tab">Power BI</a>
+    </div>
+
+    <!-- Content Sections -->
+    <div id="home" class="content-section">
+        <h1>Home</h1>
+        <p>Welcome to my portfolio website!</p>
+    </div>
+    <div id="sql" class="content-section">
+        <h1>SQL Projects</h1>
+        <p>Details about SQL projects.</p>
+    </div>
+    <div id="powerbi" class="content-section">
+        <h1>Power BI Projects</h1>
+        <p>Details about Power BI projects.</p>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

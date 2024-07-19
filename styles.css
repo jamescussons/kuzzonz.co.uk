@@ -1,33 +1,41 @@
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
-header {
+/* Tabs styles */
+.tabs {
+    display: flex;
     background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
+    overflow: hidden;
 }
 
-nav a {
-    color: #fff;
-    margin: 0 1rem;
+.tab {
+    padding: 14px 20px;
+    text-align: center;
+    color: white;
     text-decoration: none;
-}
-
-main {
-    padding: 2rem;
-}
-
-footer {
+    flex: 1;
     background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    border: 1px solid #555;
+}
+
+.tab:hover {
+    background-color: #575757;
+}
+
+.tab.active {
+    background-color: #111;
+}
+
+/* Content sections */
+.content-section {
+    padding: 20px;
+    display: none;
+}
+
+#home {
+    display: block; /* Show home content by default */
 }
