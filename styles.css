@@ -8,13 +8,15 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
 }
 
 h1 {
-    color: #333;
+    color: #fff; /* White text */
 }
 
 p {
-    color: #666;
+    color: #fff; /* White text */
+    font-size: 1.2em; /* Slightly larger font size */
 }
