@@ -1,31 +1,45 @@
+/* styles.css */
 body {
-	padding: 0;
-	overflow: hidden;
-	display: flex;
-	justify-content: center;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333; /* Background color for visibility */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Align items horizontally */
+    background-color: #444; /* Background color for the nav bar */
+    width: 100%; /* Full width */
+    justify-content: center; /* Center the items */
 }
 
 nav ul li {
-	float: left;
+    float: left; /* Align items horizontally */
 }
 
 nav ul li a {
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 nav ul li a:hover {
-	background-color: #111;
+    background-color: #111;
 }
 
 h1 {
-	color: #fff; /* White text */
+    color: #fff; /* White text */
 }
 
 p {
-	color: #fff; /* White text */
-	font-size: 1.2em; /* Slightly larger font size */
+    color: #fff; /* White text */
+    font-size: 1.2em; /* Slightly larger font size */
 }
