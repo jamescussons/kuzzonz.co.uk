@@ -1,59 +1,20 @@
-/* General styles */
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-/* Tabs container */
-.tabs {
     display: flex;
-    background-color: #333;
-    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
 }
 
-/* Default tab styles */
-.tab {
-    padding: 14px 20px;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    flex: 1;
-    border: 1px solid #555;
+h1 {
+    color: #333;
 }
 
-/* Specific tab styles */
-.tab#home {
-    background-color: #333; /* Default color for Home tab */
-}
-
-.tab#sql {
-    background-color: #90EE90; /* Light green */
-    color: black; /* Black font color */
-}
-
-.tab#powerbi {
-    background-color: #FFFF00; /* Yellow */
-    color: black; /* Black font color */
-}
-
-/* Hover effect */
-.tab:hover {
-    background-color: #575757;
-}
-
-/* Active tab styles */
-.tab.active {
-    background-color: #111;
-    color: white;
-}
-
-/* Content sections */
-.content-section {
-    padding: 20px;
-    display: none;
-}
-
-.content-section.active {
-    display: block;
+p {
+    color: #666;
 }
